@@ -1,4 +1,4 @@
-let exchangeRate = 40;
+const exchangeRate = 40;
 
 for (let dollars = 10; dollars <= 100; dollars += 10) {
   const UAH = dollars * exchangeRate;
@@ -25,8 +25,8 @@ if (!Number.isInteger(num) || num < 2) {
 
 const thirdPower = +prompt('Please, enter any number to check');
 
-if (Number.isInteger(thirdPower) && thirdPower > 0) {
-  let i = 3;
+if (Number.isInteger(thirdPower) && thirdPower >= 0) {
+  let i = 1;
 
   while (i < thirdPower) {
     i *= 3;
